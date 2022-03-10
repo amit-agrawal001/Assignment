@@ -1,0 +1,9 @@
+hello_world.admin_config_form:  
+  path: '/admin/config/hello_world/adminsettings'  
+  defaults:  
+    _form: '\Drupal\hello_world\Form\ConfigForm'  
+    _title: 'ConfigurationForm'  
+  requirements:  
+    _permission: 'access administration pages'  
+  options:  
+    _admin_route: TRUE  

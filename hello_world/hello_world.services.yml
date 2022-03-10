@@ -1,0 +1,4 @@
+services:
+  hello_world.custom_services:
+    class: Drupal\hello_world\Services\DateTime
+    
