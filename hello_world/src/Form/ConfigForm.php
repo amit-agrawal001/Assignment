@@ -71,7 +71,8 @@ class ConfigForm extends ConfigFormBase {
         ->set('Timezone', $form_state->getValue('Timezone'))
           ->save();  
          
-          $timezone = $form_state->getValue('Timezone');
+          $key = $form_state->getValue('Timezone');
+          $timezone = $form['Timezone']['#options'][$key];
          $service = \Drupal::service('hello_world.custom_services')->gettime($timezone);
           dump($service);
           die();
